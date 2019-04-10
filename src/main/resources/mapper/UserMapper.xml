@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sa.server.dao.UserMapper">
+
+    <insert id="save">
+        <selectKey keyProperty="aid" order="AFTER" resultType="java.lang.Long">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into
+        `user`(id,avatar,openid,uid,face_id,face_group,`name`,gender,`type`,mobile,email,password,membership_expire_time,last_login_ip,last_login_date,create_time,update_time,dr)
+        values ((select
+        UUID()),#{avatar},#{openid},#{uid},#{faceId},#{faceGroup},#{name},#{gender},#{type},#{mobile},#{email},#{password},#{membershipExpireTime},#{lastLoginIp},NOW(),NOW(),NOW(),#{dr})
+    </insert>
+
+    <select id="queryByMobile" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where mobile like "%"#{mobile}"%"
+        limit 1
+    </select>
+
+    <select id="queryByEmail" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where email like "%"#{email}"%"
+        limit 1
+    </select>
+
+    <select id="queryByModule" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        <where>
+            <if test="module.name !=null">
+                `name` like "%"#{module.name}"%"
+            </if>
+            <if test="module.gender !=null">
+                and gender like "%"#{module.gender}"%"
+            </if>
+            <if test="module.type !=null">
+                and `type` like "%"#{module.type}"%"
+            </if>
+            <if test="module.password !=null">
+                and password like "%"#{module.password}"%"
+            </if>
+            <if test="module.avatar !=null">
+                and avatar like "%"#{module.avatar}"%"
+            </if>
+        </where>
+        <if test="skip !=null&amp;limit !=null">
+            limit #{skip},#{limit}
+        </if>
+    </select>
+
+    <select id="countByModule" resultType="com.sa.server.pojo.User">
+        select count(aid) from `user`
+        <where>
+            <if test="name !=null">
+                `name` like "%"#{name}"%"
+            </if>
+            <if test="gender !=null">
+                and gender like "%"#{gender}"%"
+            </if>
+            <if test="type !=null">
+                and `type` like "%"#{type}"%"
+            </if>
+            <if test="password !=null">
+                and password like "%"#{password}"%"
+            </if>
+            <if test="avatar !=null">
+                and avatar like "%"#{avatar}"%"
+            </if>
+        </where>
+    </select>
+
+    <select id="queryByOpenId" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where openid like "%"#{openid}"%"
+        limit 1
+    </select>
+
+    <select id="queryByUid" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where uid like "%"#{uid}"%"
+        limit 1
+    </select>
+
+    <select id="queryById" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where id like "%"#{id}"%"
+        limit 1
+    </select>
+
+    <update id="setType">
+        update `user`
+        set `type` = #{type}
+        where id = #{id}
+    </update>
+</mapper>

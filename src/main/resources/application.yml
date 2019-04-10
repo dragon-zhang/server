@@ -1,0 +1,97 @@
+server:
+  port: 8088
+  compression:
+    enabled: true
+  tomcat:
+    max-threads: 150
+    uri-encoding: UTF-8
+    access-log-enabled: true
+    access-log-pattern:
+    accesslog.directory:
+    accesslog:
+      directory: ./logs
+      enabled: false
+      prefix: access_log
+  undertow:
+    accesslog:
+      dir: ./logs
+      enabled: true
+      prefix: access_log.
+  error:
+    path: /error
+  session-timeout: 10
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.sa.server.pojo
+  not-empty: false
+
+mapper:
+  mappers: com.sa.server.util.generator.SampleMapper
+  not-empty: false
+  identity: MYSQL
+
+#分页插件配置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shop_anywhere?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
+  messages:
+    basename: messages
+    encoding: UTF-8
+  security:
+    user:
+      name: EsdTiVIBfJgnkQI2
+      password: Hkk9gjN5jEoq6XNm2goGJEZJJ8uAxm8Ko6W1pVg2Iw1cpG7NvEIrIn7KKhiVMWg6
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: static/*.*
+
+logging:
+  level:
+    root: INFO
+    com.sa.server.dao: DEBUG
+    org.springframework.web.servlet: INFO
+    org.springframework.web.client.RestTemplate: DEBUG
+    org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: DEBUG
+    org.springframework.web.method.support.InvocableHandlerMethod: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: DEBUG
+  path: ./logs
+  file: server.log
+
+restart:
+  include:
+    mapper: /mapper-[\\w-\\.]+jar
+    pagehelper: /pagehelper-[\\w-\\.]+jar
+
+shopanywhere:
+  ip:
+    excludeIPs:
+      - 192.168.43.155
