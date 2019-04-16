@@ -11,7 +11,7 @@
  Target Server Version : 80013
  File Encoding         : 65001
 
- Date: 15/04/2019 21:22:46
+ Date: 16/04/2019 10:55:51
 */
 
 SET NAMES utf8mb4;
@@ -49,6 +49,7 @@ CREATE TABLE `buy`  (
   `aid` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '用户id',
   `entity_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '实体id',
+  `use_leased_card_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '使用卡的id,不能用卡或者没有用卡,此字段为空',
   `date` datetime(0) NOT NULL COMMENT '购买日期',
   PRIMARY KEY (`aid`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
@@ -56,7 +57,7 @@ CREATE TABLE `buy`  (
 -- ----------------------------
 -- Records of buy
 -- ----------------------------
-INSERT INTO `buy` VALUES (1, 'test', 'test', '2019-04-15 21:17:40');
+INSERT INTO `buy` VALUES (1, 'test', 'test', NULL, '2019-04-15 21:17:40');
 
 -- ----------------------------
 -- Table structure for card
@@ -64,7 +65,7 @@ INSERT INTO `buy` VALUES (1, 'test', 'test', '2019-04-15 21:17:40');
 DROP TABLE IF EXISTS `card`;
 CREATE TABLE `card`  (
   `aid` bigint(36) NOT NULL AUTO_INCREMENT COMMENT '自增主键',
-  `id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '发行id',
+  `id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '发行卡id',
   `user_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '发行人id',
   `issue_time` datetime(0) NOT NULL COMMENT '发行时间',
   `issue_version` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '发行版本',
@@ -98,6 +99,22 @@ CREATE TABLE `have`  (
   `store_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '店铺id',
   `entity_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT '实例id',
   PRIMARY KEY (`aid`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for leased_card
+-- ----------------------------
+DROP TABLE IF EXISTS `leased_card`;
+CREATE TABLE `leased_card`  (
+  `id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `card_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '发行卡id',
+  `type` int(1) NOT NULL COMMENT '0表示次数卡,1表示时间卡',
+  `available_times` int(5) NULL DEFAULT NULL COMMENT '可用次数,时间卡的可用次数为-1',
+  `expiration_date` datetime(0) NULL DEFAULT NULL COMMENT '过期时间,次数卡的过期时间为null',
+  `rent` decimal(5, 2) NULL DEFAULT NULL COMMENT '租金',
+  `tenant_id` varchar(36) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '租户id,来源于user表',
+  `rental_time` datetime(0) NULL DEFAULT NULL COMMENT '租赁时间',
+  PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
