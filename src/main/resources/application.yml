@@ -94,4 +94,3 @@ restart:
 shopanywhere:
   ip:
     excludeIPs:
-      - 192.168.43.155

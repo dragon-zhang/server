@@ -1,136 +1,358 @@
-2019-04-02 19:31:11.869  INFO 952 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 952 (D:\server\build\classes\java\main started by SuccessZhang in D:\server)
-2019-04-02 19:31:11.884  INFO 952 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
-2019-04-02 19:31:11.930  INFO 952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-02 19:31:11.930  INFO 952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-02 19:31:12.554  INFO 952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-04-02 19:31:12.556  INFO 952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-04-02 19:31:12.581  INFO 952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2019-04-02 19:31:12.884  INFO 952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b7c7431] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-02 19:31:13.223  INFO 952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-04-02 19:31:13.243  INFO 952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 19:31:13.243  INFO 952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-04-02 19:31:13.284  INFO 952 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
-2019-04-02 19:31:13.385  INFO 952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 19:31:13.385  INFO 952 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1455 ms
-2019-04-02 19:31:13.678  INFO 952 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-04-02 19:31:13.917  INFO 952 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-04-02 19:31:14.921  INFO 952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:31:15.242  INFO 952 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-04-02 19:31:15.243  INFO 952 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-04-02 19:31:16.582  INFO 952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-02 19:31:17.151  INFO 952 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2019-04-02 19:31:17.169  INFO 952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-04-02 19:31:17.171  INFO 952 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 230.412 seconds (JVM running for 232.28)
-2019-04-02 19:31:59.757  INFO 952 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:31:59.761  INFO 952 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-04-02 19:32:03.599  INFO 14220 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 14220 (D:\server\build\classes\java\main started by SuccessZhang in D:\server)
-2019-04-02 19:32:03.602  INFO 14220 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
-2019-04-02 19:32:03.639  INFO 14220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-02 19:32:03.639  INFO 14220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-02 19:32:04.241  INFO 14220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-04-02 19:32:04.243  INFO 14220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-04-02 19:32:04.268  INFO 14220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2019-04-02 19:32:04.585  INFO 14220 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa9a084] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-02 19:32:04.892  INFO 14220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-04-02 19:32:04.911  INFO 14220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 19:32:04.911  INFO 14220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-04-02 19:32:04.956  INFO 14220 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
-2019-04-02 19:32:05.055  INFO 14220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 19:32:05.055  INFO 14220 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1416 ms
-2019-04-02 19:32:05.336  INFO 14220 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-04-02 19:32:05.555  INFO 14220 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-04-02 19:32:06.589  INFO 14220 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:32:06.916  INFO 14220 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-04-02 19:32:06.917  INFO 14220 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-04-02 19:32:08.252  INFO 14220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-02 19:32:08.821  INFO 14220 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2019-04-02 19:32:08.839  INFO 14220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-04-02 19:32:08.841  INFO 14220 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 5.555 seconds (JVM running for 6.79)
-2019-04-02 19:32:29.353  INFO 14220 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:32:29.356  INFO 14220 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-04-02 19:35:33.543  INFO 17376 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 17376 (D:\server\build\classes\java\main started by SuccessZhang in D:\server)
-2019-04-02 19:35:33.546  INFO 17376 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
-2019-04-02 19:35:38.053  INFO 17376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-02 19:35:38.053  INFO 17376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-02 19:35:38.647  INFO 17376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-04-02 19:35:38.649  INFO 17376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-04-02 19:35:38.673  INFO 17376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-2019-04-02 19:35:38.964  INFO 17376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a771ed4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-04-02 19:35:39.272  INFO 17376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-04-02 19:35:39.294  INFO 17376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 19:35:39.295  INFO 17376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-04-02 19:35:39.339  INFO 17376 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
-2019-04-02 19:35:39.438  INFO 17376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 19:35:39.438  INFO 17376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1385 ms
-2019-04-02 19:35:39.724  INFO 17376 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-04-02 19:35:39.942  INFO 17376 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-04-02 19:35:40.946  INFO 17376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:35:41.261  INFO 17376 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2019-04-02 19:35:41.262  INFO 17376 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2019-04-02 19:35:42.606  INFO 17376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-02 19:35:43.170  INFO 17376 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2019-04-02 19:35:43.189  INFO 17376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-04-02 19:35:43.191  INFO 17376 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 147.374 seconds (JVM running for 190.658)
-2019-04-02 19:35:59.583  INFO 17376 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-02 19:35:59.588  INFO 17376 --- [Thread-24] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-04-02 19:36:00.013 ERROR 17376 --- [pool-1-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+2019-04-17 19:13:59.999  INFO 21800 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 21800 (D:\server\build\classes\java\main started by SuccessZhang in D:\server)
+2019-04-17 19:14:00.025  INFO 21800 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
+2019-04-17 19:14:00.081  INFO 21800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-17 19:14:00.081  INFO 21800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-17 19:14:00.850  INFO 21800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-17 19:14:00.853  INFO 21800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-17 19:14:00.885  INFO 21800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-04-17 19:14:01.212  INFO 21800 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42e2954d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-17 19:14:01.562  INFO 21800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-04-17 19:14:01.622  INFO 21800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 19:14:01.622  INFO 21800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-04-17 19:14:01.628  INFO 21800 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
+2019-04-17 19:14:01.729  INFO 21800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 19:14:01.730  INFO 21800 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1649 ms
+2019-04-17 19:14:02.040  INFO 21800 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-04-17 19:14:03.585  INFO 21800 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-04-17 19:14:04.632  INFO 21800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:14:04.975  INFO 21800 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-04-17 19:14:04.977  INFO 21800 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-04-17 19:14:06.332  INFO 21800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-17 19:14:06.903  INFO 21800 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-04-17 19:14:06.923  INFO 21800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-04-17 19:14:06.925  INFO 21800 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 7.47 seconds (JVM running for 9.092)
+2019-04-17 19:14:30.351  INFO 21800 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 19:14:30.351  INFO 21800 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-17 19:14:30.356  INFO 21800 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-04-17 19:14:30.448 ERROR 21800 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1092) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1065) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:865) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:340) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:132) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:95) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:82) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:211) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:184) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:95) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.DefaultSetOperations.members(DefaultSetOperations.java:158) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.core.DefaultBoundSetOperations.members(DefaultBoundSetOperations.java:152) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.session.data.redis.RedisSessionExpirationPolicy.cleanExpiredSessions(RedisSessionExpirationPolicy.java:132) ~[spring-session-data-redis-2.1.2.RELEASE.jar:2.1.2.RELEASE]
-	at org.springframework.session.data.redis.RedisOperationsSessionRepository.cleanupExpiredSessions(RedisOperationsSessionRepository.java:430) ~[spring-session-data-redis-2.1.2.RELEASE.jar:2.1.2.RELEASE]
-	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration.lambda$configureTasks$0(RedisHttpSessionConfiguration.java:248) ~[spring-session-data-redis-2.1.2.RELEASE.jar:2.1.2.RELEASE]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93) [spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [na:1.8.0_192]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) [na:1.8.0_192]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_192]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_192]
+java.lang.NullPointerException: null
+	at com.sa.server.controller.command.UserCommandController.save(UserCommandController.java:30) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.sa.server.filter.ShopAnyWhereIpFilter.doFilter(ShopAnyWhereIpFilter.java:41) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.0.jar:1.1.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
-Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.1.3.RELEASE.jar:na]
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.1.3.RELEASE.jar:na]
-	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234) ~[lettuce-core-5.1.3.RELEASE.jar:na]
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:204) ~[lettuce-core-5.1.3.RELEASE.jar:na]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_192]
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1085) ~[spring-data-redis-2.1.3.RELEASE.jar:2.1.3.RELEASE]
-	... 24 common frames omitted
-Caused by: java.lang.IllegalStateException: executor not accepting a task
-	at io.netty.resolver.AddressResolverGroup.getResolver(AddressResolverGroup.java:60) ~[netty-resolver-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:200) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:49) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:188) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:174) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:511) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:485) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:424) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:103) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:978) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:512) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:466) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
-	... 1 common frames omitted
 
+2019-04-17 19:15:08.531 ERROR 21800 --- [http-nio-8088-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.sa.server.controller.command.UserCommandController.save(UserCommandController.java:30) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.sa.server.filter.ShopAnyWhereIpFilter.doFilter(ShopAnyWhereIpFilter.java:41) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.0.jar:1.1.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-04-17 19:17:31.042 DEBUG 21800 --- [http-nio-8088-exec-6] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public com.sa.server.pojo.User com.sa.server.controller.command.UserCommandController.save(com.alibaba.fastjson.JSONObject,javax.servlet.http.HttpServletRequest): I/O error while reading input message; nested exception is java.io.IOException: Stream closed
+2019-04-17 19:17:31.043  WARN 21800 --- [http-nio-8088-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: I/O error while reading input message; nested exception is java.io.IOException: Stream closed]
+2019-04-17 19:17:31.045 ERROR 21800 --- [http-nio-8088-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.sa.server.controller.command.UserCommandController.save(UserCommandController.java:30) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_192]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_192]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_192]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.sa.server.filter.ShopAnyWhereIpFilter.doFilter(ShopAnyWhereIpFilter.java:41) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.0.jar:1.1.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) ~[spring-session-core-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-04-17 19:17:31.102  INFO 21800 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:17:31.104  INFO 21800 --- [Thread-23] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-04-17 19:17:35.776  INFO 20088 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 20088 (D:\server\build\classes\java\main started by SuccessZhang in D:\server)
+2019-04-17 19:17:35.779  INFO 20088 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
+2019-04-17 19:17:35.819  INFO 20088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-17 19:17:35.819  INFO 20088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-17 19:17:36.440  INFO 20088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-17 19:17:36.442  INFO 20088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-17 19:17:36.466  INFO 20088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-04-17 19:17:36.776  INFO 20088 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab40ce27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-17 19:17:37.079  INFO 20088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-04-17 19:17:37.098  INFO 20088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 19:17:37.099  INFO 20088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-04-17 19:17:37.142  INFO 20088 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
+2019-04-17 19:17:37.240  INFO 20088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 19:17:37.241  INFO 20088 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1422 ms
+2019-04-17 19:17:37.523  INFO 20088 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-04-17 19:17:40.133  INFO 20088 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-04-17 19:17:41.214  INFO 20088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:17:41.552  INFO 20088 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-04-17 19:17:41.553  INFO 20088 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-04-17 19:17:42.933  INFO 20088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-17 19:17:43.504  INFO 20088 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-04-17 19:17:43.521  INFO 20088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-04-17 19:17:43.524  INFO 20088 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 8.123 seconds (JVM running for 9.493)
+2019-04-17 19:17:52.469  INFO 20088 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 19:17:52.469  INFO 20088 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-17 19:17:52.475  INFO 20088 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-17 19:17:52.486  INFO 20088 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:17:52.652 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 19:17:52.664 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 19:17:52.812 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 19:18:46.326  INFO 20088 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:18:46.399 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 19:18:46.399 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 19:18:46.482 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 19:20:16.163  INFO 20088 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:20:16.236 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 19:20:16.236 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 19:20:16.308 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 19:20:37.793  INFO 20088 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:20:37.862 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryById   : ==>  Preparing: select * from `user` where id like "%"?"%" limit 1 
+2019-04-17 19:20:37.862 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryById   : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-17 19:20:38.047 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryById   : <==      Total: 1
+2019-04-17 19:20:38.130 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.setType     : ==>  Preparing: update `user` set `type` = ? where id = ? 
+2019-04-17 19:20:38.130 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.setType     : ==> Parameters: buyer(String), 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-17 19:20:38.222 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.setType     : <==    Updates: 1
+2019-04-17 19:21:44.555  INFO 20088 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:21:44.627 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 19:21:44.628 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 19:21:44.702 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 19:34:06.214  INFO 20088 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:34:06.294 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 19:34:06.294 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 19:34:06.369 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 19:35:24.046  INFO 20088 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:35:24.113 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 19:35:24.114 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 19:35:24.188 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 19:39:50.537  INFO 20088 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:39:50.601 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 19:39:50.602 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 19:39:50.668 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 19:50:31.882  INFO 20088 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:50:31.978 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 19:50:31.978 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 19:50:32.055 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 19:56:42.410  INFO 20088 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 19:56:42.493 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 19:56:42.494 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 19:56:42.576 DEBUG 20088 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 20:07:55.563  INFO 20088 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:07:55.724 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 20:07:55.725 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 20:07:55.845 DEBUG 20088 --- [http-nio-8088-exec-10] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 20:08:24.713  INFO 20088 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:08:24.792 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 20:08:24.793 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 20:08:24.865 DEBUG 20088 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 20:16:10.046  INFO 20088 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:16:10.116 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 20:16:10.117 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 20:16:10.201 DEBUG 20088 --- [http-nio-8088-exec-4] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 20:25:34.551  INFO 20088 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:25:34.617 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 20:25:34.617 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 20:25:34.682 DEBUG 20088 --- [http-nio-8088-exec-6] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 20:32:48.685  INFO 20088 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:32:48.751 DEBUG 20088 --- [http-nio-8088-exec-8] com.sa.server.dao.UserMapper.queryByUid  : ==>  Preparing: select * from `user` where uid like "%"?"%" limit 1 
+2019-04-17 20:32:48.752 DEBUG 20088 --- [http-nio-8088-exec-8] com.sa.server.dao.UserMapper.queryByUid  : ==> Parameters: 6721409826(String)
+2019-04-17 20:32:48.817 DEBUG 20088 --- [http-nio-8088-exec-8] com.sa.server.dao.UserMapper.queryByUid  : <==      Total: 1
+2019-04-17 20:35:36.923  INFO 20088 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:35:36.994 DEBUG 20088 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 20:35:36.994 DEBUG 20088 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 20:35:37.070 DEBUG 20088 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 20:36:34.923  INFO 20088 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:36:34.996 DEBUG 20088 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 20:36:34.996 DEBUG 20088 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 20:36:35.079 DEBUG 20088 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 20:36:57.647  INFO 20088 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:36:57.724 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 20:36:57.724 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 20:36:57.819 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 20:37:31.661  INFO 20088 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:37:31.728 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 20:37:31.728 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 20:37:31.802 DEBUG 20088 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 20:58:39.008  INFO 20088 --- [http-nio-8088-exec-7] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 20:58:40.814 DEBUG 20088 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 20:58:40.815 DEBUG 20088 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 20:58:40.886 DEBUG 20088 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 21:39:24.841  INFO 20088 --- [http-nio-8088-exec-9] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 21:39:26.471 DEBUG 20088 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 21:39:26.472 DEBUG 20088 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 21:39:26.527 DEBUG 20088 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 21:46:09.845  INFO 20088 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 21:46:09.930 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 21:46:09.930 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 21:46:10.147 DEBUG 20088 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-17 21:49:21.661  INFO 20088 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-17 21:49:21.724 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-17 21:49:21.724 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-17 21:49:21.800 DEBUG 20088 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
