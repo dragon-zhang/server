@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sa.server.dao.ValueMapper" >
+  <resultMap id="BaseResultMap" type="com.sa.server.pojo.Value" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="aid" property="aid" jdbcType="BIGINT" />
+    <result column="attribute_id" property="attributeId" jdbcType="VARCHAR" />
+    <result column="value" property="value" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

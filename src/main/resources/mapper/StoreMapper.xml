@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sa.server.dao.StoreMapper" >
+  <resultMap id="BaseResultMap" type="com.sa.server.pojo.Store" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="aid" property="aid" jdbcType="BIGINT" />
+    <result column="id" property="id" jdbcType="VARCHAR" />
+    <result column="size" property="size" jdbcType="INTEGER" />
+    <result column="localtion" property="localtion" jdbcType="VARCHAR" />
+    <result column="base64image" property="base64image" jdbcType="VARCHAR" />
+    <result column="scope" property="scope" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="dr" property="dr" jdbcType="BIT" />
+  </resultMap>
+</mapper>

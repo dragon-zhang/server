@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sa.server.dao.HaveMapper" >
+  <resultMap id="BaseResultMap" type="com.sa.server.pojo.Have" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="aid" property="aid" jdbcType="BIGINT" />
+    <result column="store_id" property="storeId" jdbcType="VARCHAR" />
+    <result column="entity_id" property="entityId" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

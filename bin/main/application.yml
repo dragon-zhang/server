@@ -28,7 +28,7 @@ mybatis:
   not-empty: false
 
 mapper:
-  mappers: com.sa.server.util.generator.SampleMapper
+  mappers: com.sa.server.util.generator.MyMapper
   not-empty: false
   identity: MYSQL
 
@@ -73,6 +73,10 @@ spring:
       enabled: true
       additional-paths: src/main/java
       exclude: static/*.*
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
 
 logging:
   level:
@@ -94,4 +98,3 @@ restart:
 shopanywhere:
   ip:
     excludeIPs:
-      - 192.168.43.155
