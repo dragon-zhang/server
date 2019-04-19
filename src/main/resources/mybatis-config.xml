@@ -28,7 +28,7 @@
     <plugins>
         <plugin interceptor="com.sa.server.mybatis.plugin.MyFirstPlugin">
             <property name="username" value="root"/>
-            <property name="password" value="zh674414319."/>
+            <property name="password" value="root"/>
         </plugin>
     </plugins>
 
