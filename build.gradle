@@ -39,7 +39,6 @@ dependencies {
     implementation('com.squareup.okhttp3:okhttp:3.10.0')
     implementation('com.alibaba:fastjson:1.2.47')
 
-	implementation('')
     implementation('tk.mybatis:mapper-spring-boot-starter:1.2.4')
     implementation('com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3')
     //自动生成dao及mapper
