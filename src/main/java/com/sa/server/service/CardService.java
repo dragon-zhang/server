@@ -3,6 +3,7 @@ package com.sa.server.service;
 import java.util.List;
 
 import com.sa.server.pojo.Card;
+import com.sa.server.pojo.CardDetail;
 
 /**
 * @author H
@@ -51,5 +52,7 @@ public interface CardService {
 	 * @return
 	 */
 	boolean deleteCard(String id);
+	
+	List<CardDetail> fuzzyQueryCard(String userId ,String name, String location,String sname,String scope,String issueVersion,String grade);
 	
 }
