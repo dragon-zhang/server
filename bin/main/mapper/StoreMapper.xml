@@ -13,5 +13,6 @@
     <result column="scope" property="scope" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="dr" property="dr" jdbcType="BIT" />
+    <result column="sname" property="sname" jdbcType="VARCHAR" />
   </resultMap>
 </mapper>

@@ -3,7 +3,7 @@ package com.sa.server.pojo;
 import java.util.Date;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,13 +18,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Card {
-    /**
-     * 自增主键
-     */
-    @Id
-    private Long aid;
-
+@Table(name = "card_detail")
+public class CardDetail {
     /**
      * 发行卡id
      */
@@ -35,6 +30,11 @@ public class Card {
      */
     @Column(name = "user_id")
     private String userId;
+
+    /**
+     * 用户名
+     */
+    private String name;
 
     /**
      * 发行时间
@@ -54,7 +54,18 @@ public class Card {
     private String grade;
 
     /**
-     * 1逻辑删除，0不删除
+     * 店铺名
      */
-    private Boolean dr;
+    private String sname;
+
+    /**
+     * 店铺地点
+     */
+    private String localtion;
+
+    /**
+     * 经营范围
+     */
+    private String scope;
+
 }

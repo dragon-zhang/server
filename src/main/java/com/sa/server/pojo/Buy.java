@@ -1,9 +1,9 @@
 package com.sa.server.pojo;
 
 import java.util.Date;
-import javax.persistence.*;
 
-import com.sa.server.pojo.User.UserBuilder;
+import javax.persistence.Column;
+import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

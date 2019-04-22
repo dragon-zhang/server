@@ -2,9 +2,10 @@ package com.sa.server.pojo;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.persistence.*;
 
-import com.sa.server.pojo.User.UserBuilder;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

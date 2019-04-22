@@ -2,6 +2,7 @@ package com.sa.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.scheduling.annotation.EnableAsync;
@@ -17,6 +18,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @EnableAspectJAutoProxy
 @Configuration
 @MapperScan(value = "com.sa.server.dao")
+@ComponentScan(basePackages= {"com.sa.server","org.n3r.idworker"})
 //开启定时同步任务
 @EnableScheduling
 //开启异步任务
