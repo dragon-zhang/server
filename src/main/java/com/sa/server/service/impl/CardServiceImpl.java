@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.github.pagehelper.PageHelper;
 import com.sa.server.dao.CardDetailMapper;
 import com.sa.server.dao.CardMapper;
 import com.sa.server.pojo.Card;
@@ -60,7 +61,8 @@ public class CardServiceImpl implements CardService{
 
 	@Override
 	@Transactional(propagation=Propagation.SUPPORTS)
-	public List<Card> queryCardsByUserId(String userId) {
+	public List<Card> queryCardsByUserId(String userId, int pageNum, int pageSize) {
+		PageHelper.startPage(pageNum, pageSize);
 		Example example = new Example(Card.class);
 		Criteria criteria = example.createCriteria();
 		criteria.andEqualTo("userId", userId);

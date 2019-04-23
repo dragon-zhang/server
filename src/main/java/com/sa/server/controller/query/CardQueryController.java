@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.github.pagehelper.PageHelper;
 import com.sa.server.pojo.Card;
 import com.sa.server.pojo.CardDetail;
 import com.sa.server.service.CardService;
@@ -35,9 +36,15 @@ public class CardQueryController {
 	
 	@GetMapping("/query")
 	@ApiOperation(value="根据发行人查询发行卡列表",notes="根据发行人查询发行卡列表的接口")
-	@ApiImplicitParam(name = "userId", value = "发行人id", required = true, dataType = "String", paramType = "query")
-	public JSONResult queryCard(String userId) {
-		List<Card> cardList = cardService.queryCardsByUserId(userId);
+	@ApiImplicitParams({
+		@ApiImplicitParam(name = "userId", value = "发行人id", required = true, dataType = "String", paramType = "query"),
+		@ApiImplicitParam(name = "pageNum", value = "页码", required = false, dataType = "Integer", paramType = "query"),
+		@ApiImplicitParam(name = "pageSize", value = "每页显示数量", required = false, dataType = "Integer", paramType = "query")
+	})
+	public JSONResult queryCard(String userId ,Integer pageNum, Integer pageSize) {
+		if( pageNum == null ) pageNum = 1;
+		if( pageSize == null ) pageSize = 5;
+		List<Card> cardList = cardService.queryCardsByUserId(userId, pageNum, pageSize);
 		return JSONResult.ok(cardList);
 	}
 	
@@ -53,7 +60,7 @@ public class CardQueryController {
 		@ApiImplicitParam(name = "grade", value = "发行卡等级", required = false, dataType = "String", paramType = "query")
 	})
 	public JSONResult fuzzyQueryCard(String userId,String name, String location, String sname, String scope, String issueVersion, String grade) {     
-		System.out.println("userId:"+userId);
+		
 		if(StringUtils.isBlank(userId) && StringUtils.isBlank(name) && StringUtils.isBlank(location) && StringUtils.isBlank(sname) && 
 				StringUtils.isBlank(scope) && StringUtils.isBlank(issueVersion) && StringUtils.isBlank(grade)) {
 			return JSONResult.errorMsg("参数出错!");

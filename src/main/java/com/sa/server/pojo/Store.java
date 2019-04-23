@@ -66,5 +66,14 @@ public class Store {
      * 店铺名
      */
     private String sname;
+
+	public Store(Integer size, String localtion, String base64image, String scope, String sname) {
+		this.size = size;
+		this.localtion = localtion;
+		this.base64image = base64image;
+		this.scope = scope;
+		this.sname = sname;
+	}
+    
     
 }

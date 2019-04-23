@@ -34,11 +34,11 @@ public interface CardService {
 	boolean updateCardById(Card card);
 	
 	/**
-	 * @description 根据发行人id查询所发行卡列表
+	 * @description 根据发行人id分页查询所发行卡列表
 	 * @param userId
 	 * @return 查询结果
 	 */
-	List<Card> queryCardsByUserId(String userId);
+	List<Card> queryCardsByUserId(String userId, int pageNum, int pageSize);
 	
 	/**
 	 * @description 根据发行卡id进行逻辑删除
@@ -53,6 +53,17 @@ public interface CardService {
 	 */
 	boolean deleteCard(String id);
 	
+	/**
+	 * @description 模糊查询
+	 * @param userId
+	 * @param name
+	 * @param location
+	 * @param sname
+	 * @param scope
+	 * @param issueVersion
+	 * @param grade
+	 * @return
+	 */
 	List<CardDetail> fuzzyQueryCard(String userId ,String name, String location,String sname,String scope,String issueVersion,String grade);
 	
 }

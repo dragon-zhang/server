@@ -1,6 +1,5 @@
 package com.sa.server.controller.command;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -30,6 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 public class CardCommandController {
 
 	private final CardService cardService;
+	
 	
 	@PostMapping("/create")
 	@ApiOperation(value="商家添加发行卡",notes="商家添加发行卡的接口")
@@ -67,5 +67,5 @@ public class CardCommandController {
 		boolean deleteCard = cardService.deleteCard(id);
 		return deleteCard ? JSONResult.ok("删除成功！"):JSONResult.errorMsg("操作失败！");
 	}
-	
+
 }
