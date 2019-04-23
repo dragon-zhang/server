@@ -127,7 +127,8 @@ CREATE TABLE `have` (
 -- Table structure for leased_card
 -- ----------------------------
 DROP TABLE IF EXISTS `leased_card`;
-CREATE TABLE `leased_card` (
+CREATE TABLE `
+` (
   `id` varchar(36) COLLATE utf8_unicode_ci NOT NULL,
   `card_id` varchar(36) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '发行卡id',
   `type` int(1) NOT NULL COMMENT '0表示次数卡,1表示时间卡',
