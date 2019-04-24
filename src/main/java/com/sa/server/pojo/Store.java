@@ -1,14 +1,13 @@
 package com.sa.server.pojo;
 
-import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import java.util.Date;
 
 /**
 * @author H
@@ -32,14 +31,14 @@ public class Store {
     private String id;
 
     /**
-     * 店铺大小/m2
+     * 店铺大小/m2
      */
-    private Integer size;
+    private Double size;
 
     /**
      * 店铺地点
      */
-    private String localtion;
+    private String location;
 
     /**
      * 店面印象
@@ -67,13 +66,4 @@ public class Store {
      */
     private String sname;
 
-	public Store(Integer size, String localtion, String base64image, String scope, String sname) {
-		this.size = size;
-		this.localtion = localtion;
-		this.base64image = base64image;
-		this.scope = scope;
-		this.sname = sname;
-	}
-    
-    
 }
