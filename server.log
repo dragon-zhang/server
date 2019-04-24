@@ -725,3 +725,227 @@ tk.mybatis.mapper.MapperException: tk.mybatis.mapper.provider.EmptyProviderä¸­ç¼
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_192]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.1.RELEASE.jar:2.1.1.RELEASE]
 
+2019-04-24 18:46:01.470  INFO 22476 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 22476 (D:\server\out\production\classes started by SuccessZhang in D:\server)
+2019-04-24 18:46:01.473  INFO 22476 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
+2019-04-24 18:46:01.521  INFO 22476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-04-24 18:46:01.522  INFO 22476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-04-24 18:46:02.466  INFO 22476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-24 18:46:02.468  INFO 22476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-24 18:46:02.500  INFO 22476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-04-24 18:46:02.808  INFO 22476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ed8b7817] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 18:46:03.216  INFO 22476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-04-24 18:46:03.233  INFO 22476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-24 18:46:03.233  INFO 22476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-04-24 18:46:03.238  INFO 22476 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
+2019-04-24 18:46:03.340  INFO 22476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-24 18:46:03.341  INFO 22476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1818 ms
+2019-04-24 18:46:03.658  INFO 22476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-04-24 18:46:04.296  INFO 22476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-04-24 18:46:06.491  INFO 22476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-24 18:46:06.531  INFO 22476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-24 18:46:06.802  INFO 22476 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-04-24 18:46:06.803  INFO 22476 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-04-24 18:46:08.760  INFO 22476 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-04-24 18:46:08.765  INFO 22476 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-04-24 18:46:08.777  INFO 22476 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-04-24 18:46:08.785  INFO 22476 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-04-24 18:46:08.876  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.878  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.889  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.890  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.892  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.892  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.892  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.898  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.898  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.898  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.910  WARN 22476 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-04-24 18:46:08.918  INFO 22476 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-04-24 18:46:08.925  INFO 22476 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2019-04-24 18:46:08.946  INFO 22476 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: searchUsingGET_1
+2019-04-24 18:46:08.971  INFO 22476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-04-24 18:46:08.974  INFO 22476 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 7.944 seconds (JVM running for 9.353)
+2019-04-24 18:46:40.718  INFO 22476 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-24 18:46:40.718  INFO 22476 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-24 18:46:40.724  INFO 22476 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-24 18:46:40.735  INFO 22476 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 18:46:41.601 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 18:46:41.614 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 18:46:41.705 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 18:47:09.787  INFO 22476 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 18:51:23.394  INFO 22476 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 18:51:23.468 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 18:51:23.469 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 18:51:23.534 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 18:51:33.302  INFO 22476 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:04:48.076  INFO 22476 --- [http-nio-8088-exec-7] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:04:48.175 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:04:48.175 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:04:48.294 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:04:56.466  INFO 22476 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:04:56.475 DEBUG 22476 --- [http-nio-8088-exec-8] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public java.util.List<com.sa.server.pojo.Store> com.sa.server.controller.query.StoreQueryController.search(java.lang.String): Required String parameter 'userId' is not present
+2019-04-24 19:04:56.477  WARN 22476 --- [http-nio-8088-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userId' is not present]
+2019-04-24 19:09:01.637  INFO 22476 --- [http-nio-8088-exec-9] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:09:01.737 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:09:01.737 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:09:01.828 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:09:11.184  INFO 22476 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:09:11.352 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:09:11.352 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:09:11.520 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 4
+2019-04-24 19:09:28.707  INFO 22476 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:09:28.783 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:09:28.783 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:09:28.912 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 4
+2019-04-24 19:22:45.591  INFO 22476 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:22:46.601 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:22:46.602 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:22:46.701 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:22:49.350  INFO 22476 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:22:49.403 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:22:49.404 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:22:49.467 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:25:23.402  INFO 22476 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:25:23.457 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:25:23.457 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:25:23.519 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:26:20.623  INFO 22476 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:26:20.676 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:26:20.676 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:26:20.743 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:29:15.814  INFO 22476 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:29:15.879 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:29:15.879 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:29:15.944 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:29:35.209  INFO 22476 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:29:35.272 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:29:35.272 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:29:35.341 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:29:38.666  INFO 22476 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:29:38.726 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:29:38.726 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:29:38.785 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:31:05.829  INFO 22476 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:31:05.913 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:31:05.914 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:31:05.979 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:31:09.204  INFO 22476 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:31:09.264 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:31:09.264 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:31:09.395 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:32:07.058  INFO 22476 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:32:07.110 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:32:07.111 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:32:07.175 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:32:14.692  INFO 22476 --- [http-nio-8088-exec-9] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:32:14.752 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:32:14.752 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:32:14.818 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:33:52.110  INFO 22476 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:33:52.171 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:33:52.171 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:33:52.238 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:33:57.069  INFO 22476 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:33:57.120 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:33:57.120 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:33:57.181 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:36:28.254  INFO 22476 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:36:28.309 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:36:28.309 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:36:28.368 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:36:41.410  INFO 22476 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:36:41.462 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:36:41.463 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:36:41.518 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:39:04.190  INFO 22476 --- [http-nio-8088-exec-7] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:39:04.265 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:39:04.265 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:39:04.336 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:39:07.116  INFO 22476 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:39:07.181 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:39:07.181 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:39:07.246 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:46:00.760  INFO 22476 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:46:00.816 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:46:00.816 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:46:00.896 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:46:06.108  INFO 22476 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:46:06.168 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:46:06.168 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:46:06.241 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:47:05.496  INFO 22476 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:47:05.553 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:47:05.554 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:47:05.617 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:47:11.261  INFO 22476 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:47:11.324 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:47:11.324 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:47:11.396 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:48:01.243  INFO 22476 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:48:01.306 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:48:01.306 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:48:01.367 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:48:05.367  INFO 22476 --- [http-nio-8088-exec-7] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:48:05.426 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:48:05.427 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:48:05.491 DEBUG 22476 --- [http-nio-8088-exec-7] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:49:19.630  INFO 22476 --- [http-nio-8088-exec-9] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:49:19.686 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:49:19.686 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:49:19.751 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:49:23.248  INFO 22476 --- [http-nio-8088-exec-10] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:49:23.306 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:49:23.307 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:49:23.377 DEBUG 22476 --- [http-nio-8088-exec-10] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:56:48.900  INFO 22476 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:56:48.972 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:56:48.972 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:56:49.059 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:56:52.244  INFO 22476 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:56:52.305 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:56:52.305 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:56:52.368 DEBUG 22476 --- [http-nio-8088-exec-3] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 19:58:16.148  INFO 22476 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:58:16.201 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 19:58:16.202 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 19:58:16.268 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 19:58:19.671  INFO 22476 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 19:58:19.726 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 19:58:19.727 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 19:58:19.799 DEBUG 22476 --- [http-nio-8088-exec-6] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 20:01:47.551  INFO 22476 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:01:47.615 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 20:01:47.615 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 20:01:47.772 DEBUG 22476 --- [http-nio-8088-exec-8] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 20:01:53.069  INFO 22476 --- [http-nio-8088-exec-9] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:01:53.128 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 20:01:53.128 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 20:01:53.193 DEBUG 22476 --- [http-nio-8088-exec-9] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 20:02:58.217  INFO 22476 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:02:58.267 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 20:02:58.267 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 20:02:58.326 DEBUG 22476 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 20:03:04.366  INFO 22476 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:03:04.487 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 20:03:04.487 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 20:03:04.567 DEBUG 22476 --- [http-nio-8088-exec-2] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 20:05:08.430  INFO 22476 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:05:08.507 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid like "%"?"%" limit 1 
+2019-04-24 20:05:08.508 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-04-24 20:05:08.590 DEBUG 22476 --- [http-nio-8088-exec-4] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-04-24 20:05:11.436  INFO 22476 --- [http-nio-8088-exec-5] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1
+2019-04-24 20:05:11.495 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : ==>  Preparing: select * from store where id in( select store_id from belong where user_id=? ) 
+2019-04-24 20:05:11.496 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : ==> Parameters: 09416f29-0f4c-11e9-8f01-309c23fd150a(String)
+2019-04-24 20:05:11.577 DEBUG 22476 --- [http-nio-8088-exec-5] c.s.s.dao.StoreMapper.queryByUserId      : <==      Total: 3
+2019-04-24 20:09:09.483  INFO 22476 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-24 20:09:09.488  INFO 22476 --- [Thread-24] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

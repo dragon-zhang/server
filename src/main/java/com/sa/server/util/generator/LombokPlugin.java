@@ -35,9 +35,9 @@ public class LombokPlugin extends PluginAdapter {
         topLevelClass.addAnnotation("@AllArgsConstructor");
         //添加domain的注释
         topLevelClass.addJavaDocLine("/**");
-        topLevelClass.addJavaDocLine("* @author SuccessZhang");
-        topLevelClass.addJavaDocLine("* @date " + date2Str(new Date()));
-        topLevelClass.addJavaDocLine("*/");
+        topLevelClass.addJavaDocLine(" * @author SuccessZhang");
+        topLevelClass.addJavaDocLine(" * @date " + date2Str(new Date()));
+        topLevelClass.addJavaDocLine(" */");
         return true;
     }
 

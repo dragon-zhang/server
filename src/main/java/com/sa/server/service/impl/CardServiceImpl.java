@@ -1,24 +1,22 @@
 package com.sa.server.service.impl;
 
-import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
-import org.n3r.idworker.Sid;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.github.pagehelper.PageHelper;
 import com.sa.server.dao.CardDetailMapper;
 import com.sa.server.dao.CardMapper;
 import com.sa.server.pojo.Card;
 import com.sa.server.pojo.CardDetail;
 import com.sa.server.service.CardService;
-
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.n3r.idworker.Sid;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.entity.Example.Criteria;
+
+import java.util.List;
 
 /**
 * @author H
@@ -95,20 +93,27 @@ public class CardServiceImpl implements CardService{
 			String grade) {
 		Example example = new Example(CardDetail.class);
 		Criteria criteria = example.createCriteria();
-		if(!StringUtils.isBlank(userId))
+        if (!StringUtils.isBlank(userId)) {
 			criteria.andLike("userId", "%" + userId + "%");
-		if(!StringUtils.isBlank(name))
+        }
+        if (!StringUtils.isBlank(name)) {
 			criteria.andLike("name", "%" + name + "%");
-		if(!StringUtils.isBlank(location))
+        }
+        if (!StringUtils.isBlank(location)) {
 			criteria.andLike("localtion", "%" + location + "%");
-		if(!StringUtils.isBlank(sname))
+        }
+        if (!StringUtils.isBlank(sname)) {
 			criteria.andLike("sname", "%" + sname + "%");
-		if(!StringUtils.isBlank(scope))
+        }
+        if (!StringUtils.isBlank(scope)) {
 			criteria.andLike("scope", "%" + scope + "%");
-		if(!StringUtils.isBlank(issueVersion))
+        }
+        if (!StringUtils.isBlank(issueVersion)) {
 			criteria.andLike("issueVersion", "%" + issueVersion + "%");
-		if(!StringUtils.isBlank(grade))
-			criteria.andLike("grade", "%" + grade + "%");
+        }
+        if (!StringUtils.isBlank(grade)) {
+            criteria.andLike("grade", "%" + grade + "%");
+        }
 		return cardDetailMapper.selectByExample(example);
 	}
 	
