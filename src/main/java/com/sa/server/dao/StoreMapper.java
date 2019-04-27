@@ -21,4 +21,16 @@ public interface StoreMapper extends MyMapper<Store> {
      */
     List<Store> queryByUserId(@Param("userId") String userId);
 
+    /**
+     * 根据地点、店名、经营范围查询用户所拥有的商店
+     *
+     * @param location 店铺地点
+     * @param sname    店铺名称
+     * @param scope    店铺经营范围
+     * @return 符合条件的商店列表
+     */
+    List<Store> queryByLocationAndSnameAndScope(@Param("location") String location,
+                                                @Param("sname") String sname,
+                                                @Param("scope") String scope);
+
 }

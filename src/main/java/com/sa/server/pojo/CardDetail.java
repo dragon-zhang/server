@@ -1,14 +1,13 @@
 package com.sa.server.pojo;
 
-import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Table;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Table;
+import java.util.Date;
 /**
 * @author H
 * @date 2019/04/18 
@@ -61,7 +60,7 @@ public class CardDetail {
     /**
      * 店铺地点
      */
-    private String localtion;
+    private String location;
 
     /**
      * 经营范围

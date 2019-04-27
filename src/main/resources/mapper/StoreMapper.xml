@@ -26,4 +26,20 @@
             )
     </select>
 
+    <select id="queryByLocationAndSnameAndScope" resultType="com.sa.server.pojo.Store">
+        select *
+        from store
+        <where>
+            <if test="location !=null">
+                location = #{location}
+            </if>
+            <if test="sname !=null">
+                and sname = #{sname}
+            </if>
+            <if test="scope !=null">
+                and scope = #{scope}
+            </if>
+        </where>
+    </select>
+
 </mapper>
