@@ -1,21 +1,23 @@
 package com.sa.server.controller.query;
 
-import com.sa.server.pojo.Card;
-import com.sa.server.pojo.CardDetail;
-import com.sa.server.service.CardService;
-import com.sa.server.util.JSONResult;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.sa.server.pojo.Card;
+import com.sa.server.pojo.CardDetail;
+import com.sa.server.pojo.common.JSONResult;
+import com.sa.server.service.CardService;
+
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author H

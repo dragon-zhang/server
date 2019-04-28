@@ -1,4 +1,4 @@
-package com.sa.server.util;
+package com.sa.server.pojo.common;
 /**
  * @author H
  * @Description: 自定义响应数据结构

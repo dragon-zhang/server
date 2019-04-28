@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sa.server.pojo.LeasedCard;
+import com.sa.server.pojo.common.JSONResult;
 import com.sa.server.service.LeasedCardService;
-import com.sa.server.util.JSONResult;
 
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
