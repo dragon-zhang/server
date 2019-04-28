@@ -3,11 +3,13 @@ package com.sa.server.controller.query;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sa.server.dao.CardMapper;
 import com.sa.server.pojo.Card;
 import com.sa.server.pojo.CardDetail;
 import com.sa.server.pojo.common.JSONResult;
@@ -30,6 +32,8 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping(value = "rest/v1/card")
 public class CardQueryController {
 
+    private final CardMapper cardMapper;
+
     private final CardService cardService;
 
     @GetMapping("/query")
@@ -49,31 +53,35 @@ public class CardQueryController {
     @GetMapping("/fuzzy")
     @ApiOperation(value = "模糊查询发行卡信息", notes = "模糊查询发行卡信息的接口")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "userId", value = "用户Id", required = false, dataType = "String", paramType = "query"),
-            @ApiImplicitParam(name = "name", value = "用户名", required = false, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "location", value = "店铺所在地", required = false, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "sname", value = "店铺名", required = false, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "scope", value = "经营范围", required = false, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "issueVersion", value = "发行版本", required = false, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "grade", value = "发行卡等级", required = false, dataType = "String", paramType = "query")
     })
-    public JSONResult fuzzyQueryCard(@RequestParam String userId,
-                                     @RequestParam String name,
-                                     @RequestParam String location,
+    public JSONResult fuzzyQueryCard(@RequestParam String location,
                                      @RequestParam String sname,
                                      @RequestParam String scope,
-                                     @RequestParam String issueVersion,
+                                     @RequestParam String version,
                                      @RequestParam String grade) {
 
-        if (StringUtils.isBlank(userId) && StringUtils.isBlank(name) && StringUtils.isBlank(location) && StringUtils.isBlank(sname) &&
-                StringUtils.isBlank(scope) && StringUtils.isBlank(issueVersion) && StringUtils.isBlank(grade)) {
-            return JSONResult.errorMsg("参数出错!");
-        }
-
-        List<CardDetail> cardList = cardService.fuzzyQueryCard(userId, name, location, sname, scope, issueVersion, grade);
+        List<CardDetail> cardList = cardService.fuzzyQueryCard(location, sname, scope, version, grade);
         if (cardList == null || cardList.isEmpty()) {
             return JSONResult.errorMsg("无相关内容。");
         }
         return JSONResult.ok(cardList);
     }
+
+    @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public List<Card> queryAll(@RequestParam String version,
+                               @RequestParam String grade) {
+        if (StringUtils.isBlank(version)) {
+            version = null;
+        }
+        if (StringUtils.isBlank(grade)) {
+            grade = null;
+        }
+        return cardMapper.queryByVersionAndGrade(version, grade);
+    }
+
 }
