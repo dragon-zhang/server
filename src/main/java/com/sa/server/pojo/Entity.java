@@ -66,4 +66,11 @@ public class Entity {
     @Column(name = "selled_price")
     private BigDecimal selledPrice;
 
+	public Entity(Date produceDate, Date warrantyExpirationDate, Boolean guarantee) {
+		this.produceDate = produceDate;
+		this.warrantyExpirationDate = warrantyExpirationDate;
+		this.guarantee = guarantee;
+	}
+
+    
 }

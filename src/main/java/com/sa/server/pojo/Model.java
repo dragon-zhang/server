@@ -60,4 +60,15 @@ public class Model {
      */
     private String material;
 
+	public Model(String name, String brand, String size, BigDecimal msrp, String color, String material) {
+		this.name = name;
+		this.brand = brand;
+		this.size = size;
+		this.msrp = msrp;
+		this.color = color;
+		this.material = material;
+	}
+
+    
+    
 }
