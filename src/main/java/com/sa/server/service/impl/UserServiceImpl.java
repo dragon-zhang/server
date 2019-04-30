@@ -162,7 +162,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String saveWithFace(JSONObject json) {
+    public String saveWithFace(JSONObject json, String realIP) {
         String base64Img = json.getString("base64Img");
         String identityResult = BaiDuApiService.getInstance().identify(base64Img, null);
         JSONObject jsonObject = JSON.parseObject(identityResult);
@@ -170,8 +170,17 @@ public class UserServiceImpl implements UserService {
             log.error("the user already exists!");
             throw new RuntimeException("the user already exists!");
         }
+        if (jsonObject.getString("result") == null) {
+            throw new RuntimeException(jsonObject.getString("error_msg"));
+        }
+        User user = new User();
+        user.setName(json.getString("username"));
+        user.setLastLoginIp(realIP);
+        user.setFaceGroup(json.getString("group"));
+        user.setDr(false);
+        userMapper.save(user);
         return BaiDuApiService.getInstance().reg(base64Img,
-                json.getString("uid"),
+                userMapper.queryByAid(user.getAid()).getId(),
                 json.getString("username"));
     }
 }

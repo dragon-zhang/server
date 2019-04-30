@@ -102,4 +102,12 @@ public interface UserMapper {
      */
     void setType(@Param("id") String id,
                  @Param("type") String type);
+
+    /**
+     * 按照用户aid查询
+     *
+     * @param aid aid
+     * @return 用户信息
+     */
+    User queryByAid(Long aid);
 }

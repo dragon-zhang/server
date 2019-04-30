@@ -11,5 +11,5 @@ public interface UserService {
 
     User save(JSONObject json, String realIP);
 
-    String saveWithFace(JSONObject json);
+    String saveWithFace(JSONObject json, String realIP);
 }

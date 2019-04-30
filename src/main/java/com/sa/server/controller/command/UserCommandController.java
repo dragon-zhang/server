@@ -42,9 +42,9 @@ public class UserCommandController {
     }
 
     @PostMapping(value = "/register/face", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public String save(@RequestBody JSONObject json) {
+    public String saveWithFace(@RequestBody JSONObject json, HttpServletRequest request) {
         System.out.println("json->" + json.toJSONString());
-        return userService.saveWithFace(json);
+        return userService.saveWithFace(json, request.getAttribute("ip").toString());
     }
 
     @PutMapping(value = "", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

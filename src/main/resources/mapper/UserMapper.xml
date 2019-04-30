@@ -71,19 +71,25 @@
 
     <select id="queryByOpenId" resultType="com.sa.server.pojo.User">
         select * from `user`
-        where openid like "%"#{openid}"%"
+        where openid = #{openid}
         limit 1
     </select>
 
     <select id="queryByUid" resultType="com.sa.server.pojo.User">
         select * from `user`
-        where uid like "%"#{uid}"%"
+        where uid = #{uid}
         limit 1
     </select>
 
     <select id="queryById" resultType="com.sa.server.pojo.User">
         select * from `user`
-        where id like "%"#{id}"%"
+        where id = #{id}
+        limit 1
+    </select>
+
+    <select id="queryByAid" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where aid = #{aid}
         limit 1
     </select>
 
