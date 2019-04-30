@@ -42,8 +42,7 @@ public class UserCommandController {
     }
 
     @PostMapping(value = "/register/face", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public String saveWithFace(@RequestBody JSONObject json, HttpServletRequest request) {
-        System.out.println("json->" + json.toJSONString());
+    public User saveWithFace(@RequestBody JSONObject json, HttpServletRequest request) {
         return userService.saveWithFace(json, request.getAttribute("ip").toString());
     }
 

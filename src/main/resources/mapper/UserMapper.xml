@@ -8,8 +8,8 @@
         </selectKey>
         insert into
         `user`(id,avatar,openid,uid,face_id,face_group,`name`,gender,`type`,mobile,email,password,membership_expire_time,last_login_ip,last_login_date,create_time,update_time,dr)
-        values ((select
-        UUID()),#{avatar},#{openid},#{uid},#{faceId},#{faceGroup},#{name},#{gender},#{type},#{mobile},#{email},#{password},#{membershipExpireTime},#{lastLoginIp},NOW(),NOW(),NOW(),#{dr})
+        values ((select UUID()),#{avatar},#{openid},#{uid},(select
+        UUID()),#{faceGroup},#{name},#{gender},#{type},#{mobile},#{email},#{password},#{membershipExpireTime},#{lastLoginIp},NOW(),NOW(),NOW(),0)
     </insert>
 
     <select id="queryByMobile" resultType="com.sa.server.pojo.User">
@@ -90,6 +90,12 @@
     <select id="queryByAid" resultType="com.sa.server.pojo.User">
         select * from `user`
         where aid = #{aid}
+        limit 1
+    </select>
+
+    <select id="queryByFaceId" resultType="com.sa.server.pojo.User">
+        select * from `user`
+        where face_id = #{faceId}
         limit 1
     </select>
 

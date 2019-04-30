@@ -159,15 +159,15 @@ public class UserServiceImpl implements UserService {
             user.setPassword(json.getString("password"));
         }
         user.setLastLoginIp(realIP);
-        user.setDr(false);
         userMapper.save(user);
         return user;
     }
 
     @Override
-    public String saveWithFace(JSONObject json, String realIP) {
+    public User saveWithFace(JSONObject json, String realIP) {
         String base64Img = json.getString("base64Img");
-        String identityResult = BaiDuApiService.getInstance().identify(base64Img, null);
+        String identityResult = BaiDuApiService.getInstance()
+                .identify(base64Img, null);
         JSONObject jsonObject = JSON.parseObject(identityResult);
         if (jsonObject.getIntValue("error_code") == 0) {
             log.error("the user already exists!");
@@ -180,11 +180,12 @@ public class UserServiceImpl implements UserService {
         user.setName(json.getString("username"));
         user.setLastLoginIp(realIP);
         user.setFaceGroup(json.getString("group"));
-        user.setDr(false);
         userMapper.save(user);
-        return BaiDuApiService.getInstance().reg(base64Img,
-                userMapper.queryByAid(user.getAid()).getId(),
-                json.getString("username"));
+        BaiDuApiService.getInstance()
+                .reg(base64Img,
+                        userMapper.queryByAid(user.getAid()).getFaceId(),
+                        user.getName());
+        return user;
     }
 
     @Override
@@ -202,9 +203,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User faceLogin(JSONObject json) {
-        String result = BaiDuApiService.getInstance().identify(json.getString("base64Img"), null);
+        String result = BaiDuApiService.getInstance().
+                identify(json.getString("base64Img"),
+                        json.getString("faceId"));
         double maxScore = 0;
-        String userId = "";
+        String faceId = "";
         if (StringUtils.isBlank(result)) {
             return null;
         }
@@ -218,7 +221,7 @@ public class UserServiceImpl implements UserService {
                         double score = s.getDouble("score");
                         if (score > maxScore) {
                             maxScore = score;
-                            userId = s.getString("user_id");
+                            faceId = s.getString("user_id");
                         }
                     }
                 }
@@ -227,7 +230,7 @@ public class UserServiceImpl implements UserService {
             e.printStackTrace();
         }
         if (maxScore > 90) {
-            return userMapper.queryById(userId);
+            return userMapper.queryByFaceId(faceId);
         } else {
             throw new RuntimeException("人脸校验不通过,请确认是否已注册");
         }

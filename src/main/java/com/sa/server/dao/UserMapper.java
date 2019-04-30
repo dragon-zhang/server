@@ -109,5 +109,7 @@ public interface UserMapper {
      * @param aid aid
      * @return 用户信息
      */
-    User queryByAid(Long aid);
+    User queryByAid(@Param("aid") Long aid);
+
+    User queryByFaceId(@Param("faceId") String faceId);
 }
