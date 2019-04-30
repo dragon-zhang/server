@@ -1,6 +1,8 @@
 package com.sa.server.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.sa.server.dao.UserMapper;
 import com.sa.server.domain.BaiDuApiService;
@@ -8,6 +10,7 @@ import com.sa.server.pojo.User;
 import com.sa.server.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
@@ -182,5 +185,51 @@ public class UserServiceImpl implements UserService {
         return BaiDuApiService.getInstance().reg(base64Img,
                 userMapper.queryByAid(user.getAid()).getId(),
                 json.getString("username"));
+    }
+
+    @Override
+    public User login(JSONObject json) {
+        User user = userMapper.queryByEmail(json.getString("account"));
+        if (user == null) {
+            user = userMapper.queryByMobile(json.getString("account"));
+        }
+        if (user != null && user.getPassword().equals(json.getString("password"))) {
+            return user;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public User faceLogin(JSONObject json) {
+        String result = BaiDuApiService.getInstance().identify(json.getString("base64Img"), null);
+        double maxScore = 0;
+        String userId = "";
+        if (StringUtils.isBlank(result)) {
+            return null;
+        }
+        try {
+            JSONObject resObj = JSON.parseObject(result).getJSONObject("result");
+            if (resObj != null) {
+                JSONArray resArray = resObj.getJSONArray("user_list");
+                for (Object o : resArray) {
+                    JSONObject s = (JSONObject) o;
+                    if (s != null) {
+                        double score = s.getDouble("score");
+                        if (score > maxScore) {
+                            maxScore = score;
+                            userId = s.getString("user_id");
+                        }
+                    }
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (maxScore > 90) {
+            return userMapper.queryById(userId);
+        } else {
+            throw new RuntimeException("人脸校验不通过,请确认是否已注册");
+        }
     }
 }

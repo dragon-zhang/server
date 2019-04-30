@@ -3,9 +3,9 @@ package com.sa.server.controller.query;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.Page;
 import com.sa.server.dao.UserMapper;
-import com.sa.server.domain.BaiDuApiService;
 import com.sa.server.mybatis.plugin.MyFirstPlugin;
 import com.sa.server.pojo.User;
+import com.sa.server.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
@@ -23,24 +23,16 @@ public class UserQueryController {
 
     private final UserMapper userMapper;
 
+    private final UserService userService;
+
     @PostMapping(value = "/login", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public User login(@RequestBody JSONObject json) {
-        User user = userMapper.queryByEmail(json.getString("account"));
-        if (user == null) {
-            user = userMapper.queryByMobile(json.getString("account"));
-        }
-        if (user != null && user.getPassword().equals(json.getString("password"))) {
-            return user;
-        } else {
-            return null;
-        }
+        return userService.login(json);
     }
-      
+
     @PostMapping(value = "/login/face", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public String faceLogin(@RequestBody JSONObject json) {
-        System.out.println("json->" + json.toJSONString());
-        return BaiDuApiService.getInstance().identify(json.getString("base64Img"),
-                json.getString("uid"));
+    public User faceLogin(@RequestBody JSONObject json) {
+        return userService.faceLogin(json);
     }
 
     @GetMapping(value = "/search", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
