@@ -28,8 +28,9 @@
     </select>
 
     <select id="getDetails" resultType="com.sa.server.pojo.CardDetail">
-        select card.id,`user`.id,`user`.name,issue_time,issue_version,grade,sname,location,scope
-        from card,`user`
+        select card.id as id,`user`.id as user_id,`user`.name,issue_time,issue_version,grade,sname,location,scope
+        from card
+        right join `user` on card.user_id=`user`.id
         right join belong on belong.user_id=`user`.id
         right join store on store.id=belong.store_id
         <where>
