@@ -181,9 +181,10 @@ public class UserServiceImpl implements UserService {
         user.setLastLoginIp(realIP);
         user.setFaceGroup(json.getString("group"));
         userMapper.save(user);
+        user = userMapper.queryByAid(user.getAid());
         BaiDuApiService.getInstance()
                 .reg(base64Img,
-                        userMapper.queryByAid(user.getAid()).getFaceId(),
+                        user.getFaceId(),
                         user.getName());
         return user;
     }
@@ -203,8 +204,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User faceLogin(JSONObject json) {
-        String result = BaiDuApiService.getInstance().
-                identify(json.getString("base64Img"),
+        String result = BaiDuApiService.getInstance()
+                .identify(json.getString("base64Img"),
                         json.getString("faceId"));
         double maxScore = 0;
         String faceId = "";
@@ -231,8 +232,7 @@ public class UserServiceImpl implements UserService {
         }
         if (maxScore > 90) {
             return userMapper.queryByFaceId(faceId);
-        } else {
-            throw new RuntimeException("人脸校验不通过,请确认是否已注册");
         }
+        return null;
     }
 }

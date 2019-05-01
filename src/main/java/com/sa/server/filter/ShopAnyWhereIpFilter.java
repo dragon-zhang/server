@@ -44,7 +44,7 @@ public class ShopAnyWhereIpFilter implements Filter {
         }
         //用户不在黑名单内，放行
         String ipAddress = IpUtil.getRealIP(req);
-        log.info("there is a request from ip:" + ipAddress);
+        log.info("there is a request from ip:" + ipAddress + ", to " + req.getRequestURL());
         req.setAttribute("ip", ipAddress);
         chain.doFilter(request, response);
     }

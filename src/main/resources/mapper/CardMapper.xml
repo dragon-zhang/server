@@ -33,23 +33,22 @@
         right join `user` on card.user_id=`user`.id
         right join belong on belong.user_id=`user`.id
         right join store on store.id=belong.store_id
-        <where>
-            <if test="location !=null">
-                location = #{location}
-            </if>
-            <if test="sname !=null">
-                and sname = #{sname}
-            </if>
-            <if test="scope !=null">
-                and scope = #{scope}
-            </if>
-            <if test="version !=null">
-                and issue_version = #{version}
-            </if>
-            <if test="grade !=null">
-                and grade = #{grade}
-            </if>
-        </where>
+        where card.id is not null
+        <if test="location !=null">
+            and location = #{location}
+        </if>
+        <if test="sname !=null">
+            and sname = #{sname}
+        </if>
+        <if test="scope !=null">
+            and scope = #{scope}
+        </if>
+        <if test="version !=null">
+            and issue_version = #{version}
+        </if>
+        <if test="grade !=null">
+            and grade = #{grade}
+        </if>
     </select>
 
 </mapper>
