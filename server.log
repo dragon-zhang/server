@@ -3566,3 +3566,84 @@ java.lang.RuntimeException: user null not exist!
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
 
+2019-05-01 14:52:52.494  INFO 31712 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-01 14:52:52.497  INFO 31712 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-05-01 14:52:54.440  INFO 31712 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 31712 (D:\server\out\production\classes started by SuccessZhang in D:\server)
+2019-05-01 14:52:54.440  INFO 31712 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
+2019-05-01 14:52:59.354  INFO 13916 --- [restartedMain] com.sa.server.ServerApplication          : Starting ServerApplication on MSI with PID 13916 (D:\server\out\production\classes started by SuccessZhang in D:\server)
+2019-05-01 14:52:59.358  INFO 13916 --- [restartedMain] com.sa.server.ServerApplication          : No active profile set, falling back to default profiles: default
+2019-05-01 14:52:59.411  INFO 13916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-01 14:52:59.411  INFO 13916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-01 14:53:00.356  INFO 13916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-01 14:53:00.358  INFO 13916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-01 14:53:00.389  INFO 13916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-05-01 14:53:00.696  INFO 13916 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a67202b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-01 14:53:01.071  INFO 13916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-05-01 14:53:01.087  INFO 13916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-01 14:53:01.088  INFO 13916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-05-01 14:53:01.093  INFO 13916 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_192\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk1.8.0_192\jre\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Redis\;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\SuccessZhang\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\SuccessZhang\AppData\Roaming\npm;C:\software\apache-maven-3.6.0\bin;;.]
+2019-05-01 14:53:01.188  INFO 13916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-01 14:53:01.188  INFO 13916 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1777 ms
+2019-05-01 14:53:01.490  INFO 13916 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-05-01 14:53:02.291  INFO 13916 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-05-01 14:53:04.424  INFO 13916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-01 14:53:04.464  INFO 13916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-01 14:53:04.754  INFO 13916 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-05-01 14:53:04.755  INFO 13916 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-05-01 14:53:06.650  INFO 13916 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-05-01 14:53:06.656  INFO 13916 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-01 14:53:06.669  INFO 13916 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-01 14:53:06.678  INFO 13916 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-01 14:53:06.771  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.774  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.786  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.787  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.787  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.787  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.787  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.796  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.796  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.796  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.803  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.803  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.803  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.815  WARN 13916 --- [restartedMain] d.s.r.o.OperationImplicitParameterReader : Coercing to be of type string. This may not even be a scalar type in actuality
+2019-05-01 14:53:06.820  INFO 13916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryAllUsingGET_1
+2019-05-01 14:53:06.824  INFO 13916 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-05-01 14:53:06.863  INFO 13916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-05-01 14:53:06.866  INFO 13916 --- [restartedMain] com.sa.server.ServerApplication          : Started ServerApplication in 7.921 seconds (JVM running for 9.312)
+2019-05-01 14:53:24.756  INFO 13916 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-01 14:53:24.756  INFO 13916 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-01 14:53:24.762  INFO 13916 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-01 14:53:24.773  INFO 13916 --- [http-nio-8088-exec-1] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/user/register
+2019-05-01 14:53:24.891 DEBUG 13916 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==>  Preparing: select * from `user` where openid = ? limit 1 
+2019-05-01 14:53:24.904 DEBUG 13916 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : ==> Parameters: 5598F91CDB94E18A90251CADB389B42F(String)
+2019-05-01 14:53:24.976 DEBUG 13916 --- [http-nio-8088-exec-1] c.s.server.dao.UserMapper.queryByOpenId  : <==      Total: 1
+2019-05-01 14:53:25.362  INFO 13916 --- [http-nio-8088-exec-2] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/store/all
+2019-05-01 14:53:25.366  INFO 13916 --- [http-nio-8088-exec-4] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/card/fuzzy
+2019-05-01 14:53:25.434 DEBUG 13916 --- [http-nio-8088-exec-2] .s.s.d.S.queryByLocationAndSnameAndScope : ==>  Preparing: select * from store 
+2019-05-01 14:53:25.434 DEBUG 13916 --- [http-nio-8088-exec-2] .s.s.d.S.queryByLocationAndSnameAndScope : ==> Parameters: 
+2019-05-01 14:53:25.519 DEBUG 13916 --- [http-nio-8088-exec-2] .s.s.d.S.queryByLocationAndSnameAndScope : <==      Total: 5
+2019-05-01 14:53:25.587 DEBUG 13916 --- [http-nio-8088-exec-4] com.sa.server.dao.CardMapper.getDetails  : ==>  Preparing: select card.id as id,`user`.id as user_id,`user`.name,issue_time,issue_version,grade,sname,location,scope from card right join `user` on card.user_id=`user`.id right join belong on belong.user_id=`user`.id right join store on store.id=belong.store_id where card.id is not null 
+2019-05-01 14:53:25.588 DEBUG 13916 --- [http-nio-8088-exec-4] com.sa.server.dao.CardMapper.getDetails  : ==> Parameters: 
+2019-05-01 14:53:25.668 DEBUG 13916 --- [http-nio-8088-exec-4] com.sa.server.dao.CardMapper.getDetails  : <==      Total: 48
+2019-05-01 14:53:27.383  INFO 13916 --- [http-nio-8088-exec-3] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/user
+2019-05-01 14:53:27.470 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryById   : ==>  Preparing: select * from `user` where id = ? limit 1 
+2019-05-01 14:53:27.470 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryById   : ==> Parameters: 50713987-6bdd-11e9-93d8-525400ef3d7b(String)
+2019-05-01 14:53:27.539 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.queryById   : <==      Total: 1
+2019-05-01 14:53:27.597 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.setType     : ==>  Preparing: update `user` set `type` = ? where id = ? 
+2019-05-01 14:53:27.598 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.setType     : ==> Parameters: seller(String), 50713987-6bdd-11e9-93d8-525400ef3d7b(String)
+2019-05-01 14:53:27.665 DEBUG 13916 --- [http-nio-8088-exec-3] com.sa.server.dao.UserMapper.setType     : <==    Updates: 1
+2019-05-01 14:53:27.778  INFO 13916 --- [http-nio-8088-exec-8] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/store/all
+2019-05-01 14:53:27.779  INFO 13916 --- [http-nio-8088-exec-6] c.sa.server.filter.ShopAnyWhereIpFilter  : there is a request from ip:192.168.43.1, to http://192.168.43.155:8088/rest/v1/card/fuzzy
+2019-05-01 14:53:27.839 DEBUG 13916 --- [http-nio-8088-exec-6] com.sa.server.dao.CardMapper.getDetails  : ==>  Preparing: select card.id as id,`user`.id as user_id,`user`.name,issue_time,issue_version,grade,sname,location,scope from card right join `user` on card.user_id=`user`.id right join belong on belong.user_id=`user`.id right join store on store.id=belong.store_id where card.id is not null 
+2019-05-01 14:53:27.839 DEBUG 13916 --- [http-nio-8088-exec-6] com.sa.server.dao.CardMapper.getDetails  : ==> Parameters: 
+2019-05-01 14:53:27.842 DEBUG 13916 --- [http-nio-8088-exec-8] .s.s.d.S.queryByLocationAndSnameAndScope : ==>  Preparing: select * from store 
+2019-05-01 14:53:27.842 DEBUG 13916 --- [http-nio-8088-exec-8] .s.s.d.S.queryByLocationAndSnameAndScope : ==> Parameters: 
+2019-05-01 14:53:27.908 DEBUG 13916 --- [http-nio-8088-exec-8] .s.s.d.S.queryByLocationAndSnameAndScope : <==      Total: 5
+2019-05-01 14:53:27.909 DEBUG 13916 --- [http-nio-8088-exec-6] com.sa.server.dao.CardMapper.getDetails  : <==      Total: 48

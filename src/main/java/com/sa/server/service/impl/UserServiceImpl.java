@@ -162,7 +162,7 @@ public class UserServiceImpl implements UserService {
         }
         user.setLastLoginIp(realIP);
         userMapper.save(user);
-        return user;
+        return userMapper.queryByAid(user.getAid());
     }
 
     @Override
