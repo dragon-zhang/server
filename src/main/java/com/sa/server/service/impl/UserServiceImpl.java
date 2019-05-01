@@ -13,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 /**
  * @author SuccessZhang
  * @date 2018.12.29
@@ -179,6 +181,7 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         user.setName(json.getString("username"));
         user.setLastLoginIp(realIP);
+        user.setFaceId(UUID.randomUUID().toString());
         user.setFaceGroup(json.getString("group"));
         userMapper.save(user);
         user = userMapper.queryByAid(user.getAid());
@@ -234,5 +237,10 @@ public class UserServiceImpl implements UserService {
             return userMapper.queryByFaceId(faceId);
         }
         return null;
+    }
+
+    @Override
+    public User smsLogin(String mobile) {
+        return userMapper.queryByMobile(mobile);
     }
 }

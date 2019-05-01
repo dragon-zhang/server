@@ -16,4 +16,6 @@ public interface UserService {
     User login(JSONObject json);
 
     User faceLogin(JSONObject json);
+
+    User smsLogin(String mobile);
 }

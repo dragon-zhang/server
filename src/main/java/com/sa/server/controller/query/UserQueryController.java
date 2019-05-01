@@ -33,4 +33,9 @@ public class UserQueryController {
         return userService.faceLogin(json);
     }
 
+    @PostMapping(value = "/login/sms", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public User smsLogin(@RequestBody String mobile) {
+        return userService.smsLogin(mobile);
+    }
+
 }

@@ -35,7 +35,6 @@ public class MyFirstPlugin implements Interceptor {
      */
     @Override
     public Object plugin(Object target) {
-        System.out.println("MyFirstPlugin... plugin:mybatis将要包装的对象" + target);
         // 我们可以借助Plugin的wrap方法来使用挡圈Interceptor包装我们目标对象
         // 返回为当前target创建的动态代理
         return Plugin.wrap(target, this);
