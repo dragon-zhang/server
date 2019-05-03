@@ -1,8 +1,9 @@
 package com.sa.server.service;
 
-import java.util.List;
-
+import com.sa.server.controller.query.LeasedCardQueryController;
 import com.sa.server.pojo.LeasedCard;
+
+import java.util.List;
 
 /**
 * @author H
@@ -22,5 +23,5 @@ public interface LeasedCardService {
 	 * @description 根据用户分页查询所租用卡
 	 * @return
 	 */
-	List<LeasedCard> queryLeasedCard(String tenantId, int pageNum, int pageSize);
+    List<LeasedCardQueryController.LeasedCardVO> queryLeasedCard(String tenantId, int pageNum, int pageSize);
 }

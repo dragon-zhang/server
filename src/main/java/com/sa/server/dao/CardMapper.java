@@ -38,4 +38,11 @@ public interface CardMapper extends MyMapper<Card> {
                                 @Param("version") String version,
                                 @Param("grade") String grade);
 
+    /**
+     * 根据卡id查询卡
+     *
+     * @param id 卡id
+     * @return 卡
+     */
+    Card queryById(@Param("id") String id);
 }

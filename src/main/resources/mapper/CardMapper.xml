@@ -51,4 +51,11 @@
         </if>
     </select>
 
+    <select id="queryById" resultType="com.sa.server.pojo.Card">
+        select *
+        from card
+        where id=#{id}
+        limit 1
+    </select>
+
 </mapper>
