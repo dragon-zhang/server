@@ -51,9 +51,9 @@ management:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://134.175.146.243:33061/shop_anywhere?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: zh674414319.
+    url: 
+    username: 
+    password: 
     druid:
       initial-size: 1
       min-idle: 1
