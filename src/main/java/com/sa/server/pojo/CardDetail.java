@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Table;
 import java.util.Date;
+
 /**
-* @author H
-* @date 2019/04/18 
-* @description 
-*/
+ * @author H
+ * @date 2019/04/18
+ */
 @Data
 @Builder
 @NoArgsConstructor

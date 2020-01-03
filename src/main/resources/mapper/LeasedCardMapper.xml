@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.sa.server.dao.LeasedCardMapper" >
-  <resultMap id="BaseResultMap" type="com.sa.server.pojo.LeasedCard" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sa.server.dao.LeasedCardMapper">
+    <resultMap id="BaseResultMap" type="com.sa.server.pojo.LeasedCard">
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="id" property="id" jdbcType="VARCHAR" />
-    <result column="card_id" property="cardId" jdbcType="VARCHAR" />
-    <result column="type" property="type" jdbcType="INTEGER" />
-    <result column="available_times" property="availableTimes" jdbcType="INTEGER" />
-    <result column="expiration_date" property="expirationDate" jdbcType="TIMESTAMP" />
-    <result column="rent" property="rent" jdbcType="DECIMAL" />
-    <result column="tenant_id" property="tenantId" jdbcType="VARCHAR" />
-    <result column="rental_time" property="rentalTime" jdbcType="TIMESTAMP" />
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="card_id" jdbcType="VARCHAR" property="cardId"/>
+        <result column="type" jdbcType="INTEGER" property="type"/>
+        <result column="available_times" jdbcType="INTEGER" property="availableTimes"/>
+        <result column="expiration_date" jdbcType="TIMESTAMP" property="expirationDate"/>
+        <result column="rent" jdbcType="DECIMAL" property="rent"/>
+        <result column="tenant_id" jdbcType="VARCHAR" property="tenantId"/>
+        <result column="rental_time" jdbcType="TIMESTAMP" property="rentalTime"/>
   </resultMap>
 </mapper>

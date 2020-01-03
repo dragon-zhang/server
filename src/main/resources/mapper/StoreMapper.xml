@@ -1,29 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sa.server.dao.StoreMapper">
     <resultMap id="BaseResultMap" type="com.sa.server.pojo.Store">
         <!--
           WARNING - @mbg.generated
         -->
-        <id column="aid" property="aid" jdbcType="BIGINT"/>
-        <result column="id" property="id" jdbcType="VARCHAR"/>
-        <result column="size" property="size" jdbcType="INTEGER"/>
-        <result column="localtion" property="localtion" jdbcType="VARCHAR"/>
-        <result column="base64image" property="base64image" jdbcType="VARCHAR"/>
-        <result column="scope" property="scope" jdbcType="VARCHAR"/>
-        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
-        <result column="dr" property="dr" jdbcType="BIT"/>
-        <result column="sname" property="sname" jdbcType="VARCHAR"/>
+        <id column="aid" jdbcType="BIGINT" property="aid"/>
+        <result column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="size" jdbcType="INTEGER" property="size"/>
+        <result column="location" jdbcType="VARCHAR" property="location"/>
+        <result column="base64image" jdbcType="VARCHAR" property="base64image"/>
+        <result column="scope" jdbcType="VARCHAR" property="scope"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="dr" jdbcType="BIT" property="dr"/>
+        <result column="sname" jdbcType="VARCHAR" property="sname"/>
+        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
     </resultMap>
 
     <select id="queryByUserId" resultType="com.sa.server.pojo.Store">
         select *
         from store
-        where id in(
-            select store_id
-            from belong
-            where user_id=#{userId}
-            )
+        where user_id=#{userId}
     </select>
 
     <select id="queryByLocationAndSnameAndScope" resultType="com.sa.server.pojo.Store">

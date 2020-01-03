@@ -1,27 +1,25 @@
 package com.sa.server.pojo;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
-* @author H
-* @date 2019/04/18 
-* @description 
-*/
+ * @author SuccessZhang
+ * @date 2020/01/03
+ */
+@Table(name = "leased_card")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "leased_card")
 public class LeasedCard {
     @Id
     private String id;
@@ -65,5 +63,4 @@ public class LeasedCard {
      */
     @Column(name = "rental_time")
     private Date rentalTime;
-
 }

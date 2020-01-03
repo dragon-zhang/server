@@ -10,10 +10,9 @@ import javax.persistence.Id;
 import java.util.Date;
 
 /**
-* @author H
-* @date 2019/04/18 
-* @description 
-*/
+ * @author SuccessZhang
+ * @date 2020/01/03
+ */
 @Data
 @Builder
 @NoArgsConstructor
@@ -31,9 +30,10 @@ public class Store {
     private String id;
 
     /**
-     * 店铺大小/m2
+     * 店铺大小
+     * /m2
      */
-    private Double size;
+    private Integer size;
 
     /**
      * 店铺地点
@@ -61,9 +61,11 @@ public class Store {
      */
     private Boolean dr;
 
-    /**
-     * 店铺名
-     */
     private String sname;
 
+    /**
+     * 创始人id
+     */
+    @Column(name = "user_id")
+    private String userId;
 }

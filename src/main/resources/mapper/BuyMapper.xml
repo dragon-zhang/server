@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.sa.server.dao.BuyMapper" >
-  <resultMap id="BaseResultMap" type="com.sa.server.pojo.Buy" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sa.server.dao.BuyMapper">
+    <resultMap id="BaseResultMap" type="com.sa.server.pojo.Buy">
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="aid" property="aid" jdbcType="BIGINT" />
-    <result column="user_id" property="userId" jdbcType="VARCHAR" />
-    <result column="entity_id" property="entityId" jdbcType="VARCHAR" />
-    <result column="use_leased_card_id" property="useLeasedCardId" jdbcType="VARCHAR" />
-    <result column="date" property="date" jdbcType="TIMESTAMP" />
+        <id column="aid" jdbcType="BIGINT" property="aid"/>
+        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="entity_id" jdbcType="VARCHAR" property="entityId"/>
+        <result column="use_leased_card_id" jdbcType="VARCHAR" property="useLeasedCardId"/>
+        <result column="date" jdbcType="TIMESTAMP" property="date"/>
   </resultMap>
 </mapper>

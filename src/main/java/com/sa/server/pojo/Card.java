@@ -1,19 +1,18 @@
 package com.sa.server.pojo;
 
-import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import java.util.Date;
+
 /**
-* @author H
-* @date 2019/04/18 
-* @description 
-*/
+ * @author SuccessZhang
+ * @date 2020/01/03
+ */
 @Data
 @Builder
 @NoArgsConstructor

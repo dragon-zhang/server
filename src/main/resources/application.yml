@@ -87,8 +87,7 @@ logging:
     org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: DEBUG
     org.springframework.web.method.support.InvocableHandlerMethod: DEBUG
     org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: DEBUG
-  path: ./logs
-  file: server.log
+  file: logs/server.log
 
 restart:
   include:

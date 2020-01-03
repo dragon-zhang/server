@@ -1,21 +1,19 @@
 package com.sa.server.pojo;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Id;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
-* @author H
-* @date 2019/04/18 
-* @description 
-*/
+ * @author H
+ * @date 2019/04/18
+ */
 @Data
 @Builder
 @NoArgsConstructor
@@ -66,11 +64,11 @@ public class Entity {
     @Column(name = "selled_price")
     private BigDecimal selledPrice;
 
-	public Entity(Date produceDate, Date warrantyExpirationDate, Boolean guarantee) {
-		this.produceDate = produceDate;
-		this.warrantyExpirationDate = warrantyExpirationDate;
-		this.guarantee = guarantee;
-	}
+    public Entity(Date produceDate, Date warrantyExpirationDate, Boolean guarantee) {
+        this.produceDate = produceDate;
+        this.warrantyExpirationDate = warrantyExpirationDate;
+        this.guarantee = guarantee;
+    }
 
-    
+
 }

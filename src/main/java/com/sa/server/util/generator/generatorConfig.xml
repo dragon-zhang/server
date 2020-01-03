@@ -28,16 +28,15 @@
         <javaClientGenerator targetPackage="com.sa.server.dao" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="attribute"></table>
-		<table tableName="belong"></table>
-		<table tableName="buy"></table>
-		<table tableName="card"></table>
-		<table tableName="entity"></table>
-		<table tableName="have"></table>
-		<table tableName="leased_card"></table>
-		<table tableName="model"></table>
-		<table tableName="store"></table>
-		<table tableName="value"></table>
+        <table tableName="attribute"/>
+        <table tableName="buy"/>
+        <table tableName="card"/>
+        <table tableName="entity"/>
+        <table tableName="have"/>
+        <table tableName="leased_card"/>
+        <table tableName="model"/>
+        <table tableName="store"/>
+        <table tableName="value"/>
 
     </context>
 </generatorConfiguration>
