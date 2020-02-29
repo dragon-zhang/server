@@ -1,13 +1,17 @@
-package org.n3r.idworker.utils;
+package com.sa.server.idworker.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
+import static com.sa.server.idworker.utils.Serializes.closeQuietly;
 import static java.io.File.separator;
-import static org.n3r.idworker.utils.Serializes.closeQuietly;
 
 public class Props {
     static Logger log = LoggerFactory.getLogger(Props.class);

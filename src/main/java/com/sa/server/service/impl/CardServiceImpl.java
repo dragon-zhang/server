@@ -2,12 +2,12 @@ package com.sa.server.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.sa.server.dao.CardMapper;
+import com.sa.server.idworker.Sid;
 import com.sa.server.pojo.Card;
 import com.sa.server.pojo.CardDetail;
 import com.sa.server.service.CardService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.n3r.idworker.Sid;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;

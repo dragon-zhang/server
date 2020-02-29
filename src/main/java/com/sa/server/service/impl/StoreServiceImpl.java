@@ -1,11 +1,11 @@
 package com.sa.server.service.impl;
 
 import com.sa.server.dao.StoreMapper;
+import com.sa.server.idworker.Sid;
 import com.sa.server.pojo.Store;
 import com.sa.server.service.StoreService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.n3r.idworker.Sid;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;

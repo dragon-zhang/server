@@ -1,6 +1,6 @@
-package org.n3r.idworker;
+package com.sa.server.idworker;
 
-import org.n3r.idworker.strategy.DefaultRandomCodeStrategy;
+import com.sa.server.idworker.strategy.DefaultRandomCodeStrategy;
 
 public class Code {
     private static RandomCodeStrategy strategy;

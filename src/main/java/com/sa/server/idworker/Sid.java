@@ -1,7 +1,7 @@
-package org.n3r.idworker;
+package com.sa.server.idworker;
 
-import org.n3r.idworker.strategy.DefaultWorkerIdStrategy;
-import org.n3r.idworker.utils.Utils;
+import com.sa.server.idworker.strategy.DefaultWorkerIdStrategy;
+import com.sa.server.idworker.utils.Utils;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
